@@ -42,6 +42,10 @@ $bootstrap-icons-font-dir: "../node_modules/bootstrap-icons/font/fonts";
 
 // END BOOTSTRAP ICONS
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: $indigo-100 !important;
   background-image: linear-gradient(
@@ -50,5 +54,5 @@ body {
     mix($indigo-400, $indigo-100) 30%,
     $indigo-100 100%
   ) !important;
-  min-height: 100vh;
+  min-height: 100%;
 }
