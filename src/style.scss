@@ -1,0 +1,51 @@
+@import "bootstrap/scss/mixins/banner";
+@include bsBanner("");
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$font-size-base: 2rem;
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+$body-color: $indigo-800;
+$link-color: $body-color;
+$link-hover-color: shift-color($link-color, $link-shade-percentage) !important;
+
+// 5. Include remainder of required parts
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+
+$bootstrap-icons-font-src: url("../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2")
+    format("woff2"),
+  url("../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff")
+    format("woff");
+@import "bootstrap-icons/font/bootstrap-icons.scss";
+
+body {
+  background-color: $indigo-100 !important;
+  background-image: linear-gradient(
+    25deg,
+    $indigo-400 0%,
+    mix($indigo-400, $indigo-100) 30%,
+    $indigo-100 100%
+  ) !important;
+  min-height: 100vh;
+}
