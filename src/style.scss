@@ -1,3 +1,5 @@
+// START BOOTSTRAP
+
 @import "bootstrap/scss/mixins/banner";
 @include bsBanner("");
 
@@ -31,13 +33,14 @@ $link-hover-color: shift-color($link-color, $link-shade-percentage) !important;
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "bootstrap/scss/utilities/api";
 
-// 8. Add additional custom code here
+// END BOOTSTRAP
 
-$bootstrap-icons-font-src: url("../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2")
-    format("woff2"),
-  url("../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff")
-    format("woff");
-@import "bootstrap-icons/font/bootstrap-icons.scss";
+// START BOOTSTRAP ICONS
+
+$bootstrap-icons-font-dir: "../node_modules/bootstrap-icons/font/fonts";
+@import "bootstrap-icons/font/bootstrap-icons";
+
+// END BOOTSTRAP ICONS
 
 body {
   background-color: $indigo-100 !important;
