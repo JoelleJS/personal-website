@@ -8,6 +8,12 @@ export default defineConfig({
     createHtmlPlugin({
       minify: true,
       entry: "src/main.js",
+      inject: {
+        data: {
+          title: "Full-Stack DevOps Engineer | Joëlle van Essen",
+          url: "https://joelle.v-essen.nl",
+        },
+      },
     }),
     VitePluginInjectPreload({
       files: [
