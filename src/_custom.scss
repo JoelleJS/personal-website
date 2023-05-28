@@ -13,7 +13,7 @@ body {
   min-height: 100%;
 }
 
-$icon-dim: calc(3.5rem + 3vw);
+$icon-dim: calc(3.75rem + 2.5vw);
 
 .icon-container, .icon {
   width: $icon_dim;
@@ -21,5 +21,5 @@ $icon-dim: calc(3.5rem + 3vw);
 }
 
 .subtitle {
-  font-size: calc(1.2rem + 0.9vw)
+  font-size: calc(1.2rem + 0.45vw)
 }
