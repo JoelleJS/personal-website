@@ -12,6 +12,7 @@ export default defineConfig({
         data: {
           title: "Full-Stack DevOps Engineer | Joëlle van Essen",
           url: "https://joelle.v-essen.nl",
+          description: "Java en JavaScript developer in de omgeving Friesland en Groningen"
         },
       },
     }),
