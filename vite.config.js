@@ -1,9 +1,10 @@
 import { defineConfig } from "vite";
-
 import { createHtmlPlugin } from "vite-plugin-html";
+import legacy from '@vitejs/plugin-legacy'
 
 export default defineConfig({
   plugins: [
+    legacy(),
     createHtmlPlugin({
       minify: true,
       entry: "src/main.js",
