@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 
 import { createHtmlPlugin } from "vite-plugin-html";
-import VitePluginInjectPreload from "vite-plugin-inject-preload";
 
 export default defineConfig({
   plugins: [
@@ -15,17 +14,6 @@ export default defineConfig({
           description: "Java en JavaScript developer in de omgeving Friesland en Groningen"
         },
       },
-    }),
-    VitePluginInjectPreload({
-      files: [
-        {
-          match: /bootstrap-icons-[a-z0-9]*\.woff2$/,
-          attributes: {
-            as: "font",
-            type: "font/woff2",
-          },
-        },
-      ],
-    }),
+    })
   ],
 });

@@ -35,24 +35,4 @@ $link-hover-color: shift-color($link-color, $link-shade-percentage) !important;
 
 // END BOOTSTRAP
 
-// START BOOTSTRAP ICONS
-
-$bootstrap-icons-font-dir: "../node_modules/bootstrap-icons/font/fonts";
-@import "bootstrap-icons/font/bootstrap-icons";
-
-// END BOOTSTRAP ICONS
-
-html {
-  height: 100%;
-}
-
-body {
-  background-color: $indigo-100 !important;
-  background-image: linear-gradient(
-    25deg,
-    $indigo-400 0%,
-    mix($indigo-400, $indigo-100) 30%,
-    $indigo-100 100%
-  ) !important;
-  min-height: 100%;
-}
+@import "custom";
