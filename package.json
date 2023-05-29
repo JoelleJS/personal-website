@@ -14,7 +14,7 @@
   "devDependencies": {
     "@vitejs/plugin-legacy": "^4.0.4",
     "autoprefixer": "^10.4.14",
-    "browserslist": "^4.21.6",
+    "browserslist": "^4.21.7",
     "postcss": "^8.4.24",
     "prettier": "2.8.8",
     "sass": "^1.62.1",
