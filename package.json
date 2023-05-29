@@ -2,6 +2,7 @@
   "name": "personal-website",
   "version": "1.0.0",
   "author": "Joëlle van Essen (joelle@v-essen.nl)",
+  "browserslist": "defaults",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
