@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import { createHtmlPlugin } from "vite-plugin-html";
 import legacy from '@vitejs/plugin-legacy'
+import VitePluginInjectPreload from 'vite-plugin-inject-preload'
 
 export default defineConfig({
   plugins: [
@@ -15,6 +16,17 @@ export default defineConfig({
           description: "Java en JavaScript developer in de omgeving Friesland en Groningen"
         },
       },
+    }),
+    VitePluginInjectPreload({
+      files: [
+        {
+          match: /index-[a-z-0-9]*\.css$/,
+          attributes: {
+            as: 'style',
+          }
+        }
+      ],
+      injectTo: 'head-prepend'
     })
   ],
 });
