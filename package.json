@@ -10,7 +10,7 @@
     "prettier": "npx prettier --write ."
   },
   "dependencies": {
-    "bootstrap": "~5.2.3"
+    "bootstrap": "~5.3.2"
   },
   "devDependencies": {
     "@vitejs/plugin-legacy": "^4.0.4",
